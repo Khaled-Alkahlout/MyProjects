@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="windth=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contact.css">
@@ -16,26 +16,42 @@
 
   </header>
 
-<body>
+  <body>
 
-<?php
+  <h2 class='input'>Thanks for your massge, We wil send you E-mail back</h2>
 
-$name= $_REQUEST['fname'];
+  <?php
+  if( isset($_POST["submit"]) )
+  {
+  if( empty($_POST["fname"]) )
+  {
+    echo "name not failed";
+  }
+  else if( empty($_POST["email"]) )
+  {
+    echo "E-mail not failed";
+  }
+  else
+  {
 
-$email= $_REQUEST['email'];
+  $name= $_REQUEST['fname'];
 
-$bericht= $_REQUEST['bericht'];
+  $email= $_REQUEST['email'];
 
-
-echo "<h2 class='input'>Thanks for your massge, We wil send you E-mail back</h2>";
-echo "<html><p class='name'>$name</p></html>";
-echo "<br>";
-echo "<html><p class='email'>$email</p></html>";
-echo "<br>";
-echo "<html><p class='bericht'>$bericht</p></html>";
-
-?>
+  $bericht= $_REQUEST['bericht'];
 
 
-</body>
+  echo "<html><p class='name'>$name</p></html>";
+  echo "<br>";
+  echo "<html><p class='email'>$email</p></html>";
+  echo "<br>";
+  echo "<html><p class='bericht'>$bericht</p></html>";
+
+  }
+
+  }
+  ?>
+
+ 
+  </body>
 </html>

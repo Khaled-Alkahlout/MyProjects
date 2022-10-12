@@ -21,11 +21,6 @@ echo $type;
 echo "<br>";
 echo "<br>";
 
-/*echo "datatype is: ";
-var_dump($array[4]);
-echo "<br>";
-echo "<br>";*/
-
 array_pop($array);
 print_r($array);
 echo "<br>";
@@ -46,22 +41,13 @@ print_r($datatype);
 echo "<br>";
 print_r($array);
 
-/*var_dump($array[0]);*/
 echo "<br>";
 echo "<br>";
-
-/*$eersteElement = array_shift($array);
-print_r($array);
-echo "<br>";
-echo "<br>";*/
 
 unset($array[2]);
 print_r($array);
 echo "<br>";
 echo "<br>";
-
-/*array_pop($array);
-print_r($array);*/
 
 unset($array[4]);
 print_r($array);
