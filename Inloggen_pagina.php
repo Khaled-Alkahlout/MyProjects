@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <title>Inloggen pagine</title>
-        <link rel="stylesheet" href="style3.css" />
-        <link herf="index(2).php" />
     </head>
     <body>
     

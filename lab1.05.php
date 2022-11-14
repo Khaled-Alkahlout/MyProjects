@@ -48,7 +48,6 @@ unset($array[2]);
 print_r($array);
 echo "<br>";
 echo "<br>";
-
 unset($array[4]);
 print_r($array);
 echo "<br>";

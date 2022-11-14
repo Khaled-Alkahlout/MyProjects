@@ -21,7 +21,7 @@
         {
             echo "Plaats niet ingevuld";
         }
-        else if( empty($_POST["E-mail"]))
+        else if( empty($_POST["E-mail"]) )
         {
             echo "E-mail niet ingevuld";
         }
